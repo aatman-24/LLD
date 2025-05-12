@@ -21,6 +21,13 @@ public class Board {
         }
     }
 
+    /**
+     * Mark a position on the board with a given mark.
+     *
+     * @param x the row index of the position
+     * @param y the column index of the position
+     * @param mark the mark to place at the position
+     */
     public void mark(int x, int y, String mark) {
         board.get(x).set(y, mark);
     }
