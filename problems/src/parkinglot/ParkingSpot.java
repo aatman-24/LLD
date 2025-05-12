@@ -1,5 +1,12 @@
 package parkinglot;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 public class ParkingSpot {
 
     private String spotNumber;
@@ -14,10 +21,6 @@ public class ParkingSpot {
         this.vehicleType = vehicleType;
     }
 
-    public VehicleType getVehicleType() {
-        return vehicleType;
-    }
-
     public boolean isAvailable() {
         return !isOccupied;
     }
@@ -30,33 +33,5 @@ public class ParkingSpot {
     public void unbookSpot() {
         this.vehicle = null;
         isOccupied = false;
-    }
-
-    public String getSpotNumber() {
-        return spotNumber;
-    }
-
-    public void setSpotNumber(String spotNumber) {
-        this.spotNumber = spotNumber;
-    }
-
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
-
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
-    }
-
-    public boolean isOccupied() {
-        return isOccupied;
-    }
-
-    public void setOccupied(boolean occupied) {
-        isOccupied = occupied;
-    }
-
-    public void setVehicleType(VehicleType vehicleType) {
-        this.vehicleType = vehicleType;
     }
 }

@@ -7,7 +7,11 @@ public class ParkingLot {
     private static ParkingLot parkingLot = null;
     private final int NO_OF_LEVELS;
     private final int NO_OF_SLOTS_PER_LEVEL;
+
+    // {parking_level_number, ParkingLevel}
     private ConcurrentHashMap<Integer, ParkingLevel> levels;
+
+    // {vehicle_number, ParkingLevel}
     private ConcurrentHashMap<String, ParkingLevel> parkedVehicles;
 
     private ParkingLot(int NO_OF_LEVELS, int NO_OF_SLOTS_PER_LEVEL) {

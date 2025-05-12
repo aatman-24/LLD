@@ -1,10 +1,15 @@
 package parkinglot;
 
+import lombok.Getter;
+import lombok.Setter;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
+@Getter
+@Setter
 public class ParkingLevel {
 
     private final ConcurrentLinkedQueue<ParkingSpot> availableSpots;
+
     private int parkingLevelNumber;
 
     public ParkingLevel(int NO_OF_SPOT, int parkingLevelNumber) {
@@ -59,10 +64,4 @@ public class ParkingLevel {
             }
         }
     }
-
-    public int getParkingLevelNumber() {
-        return parkingLevelNumber;
-    }
-
-
 }
