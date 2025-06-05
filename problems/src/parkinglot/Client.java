@@ -1,5 +1,7 @@
 package parkinglot;
 
+import java.util.HashMap;
+
 public class Client {
 
     public static void main(String[] args) {
