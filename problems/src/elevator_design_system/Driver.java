@@ -34,8 +34,8 @@ public class Driver {
 
         // Added elevator and its controller
         ElevatorCreator elevatorCreator = ElevatorCreator.getInstance();
-        elevatorCreator.addElevatorController(new ElevatorController(elevatorA));
-        elevatorCreator.addElevatorController(new ElevatorController(elevatorB));
+//        elevatorCreator.addElevatorController(new ElevatorController(elevatorA));
+//        elevatorCreator.addElevatorController(new ElevatorController(elevatorB));
 
         // Actual working start from here,
         floor2.requestElevator(Direction.UP);
